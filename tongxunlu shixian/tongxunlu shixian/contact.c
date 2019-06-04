@@ -40,6 +40,7 @@ int Check_Capacity(Contact *pcon)
 		if (ptr != NULL)
 		{
 			pcon->data = ptr;
+	                pcon->capacity += 2;
 			printf("增容成功!");
 			return 1;
 		}
